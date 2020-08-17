@@ -13,12 +13,14 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
   <Container size={size}>
     <header>
-      <img src={Logo} alt="GoFinances" />
-      <nav>
-        {
-          // Todo
-        }
-      </nav>
+      <Link to="/import">
+        <img src={Logo} alt="GoFinances" />
+        <nav>
+          {
+            // Todo
+          }
+        </nav>
+      </Link>
     </header>
   </Container>
 );
